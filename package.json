@@ -1,0 +1,18 @@
+{
+  "name": "simple-vue",
+  "version": "1.0.0",
+  "description": "简易版的 Vue 响应式",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "author": "夜空中最亮的星",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

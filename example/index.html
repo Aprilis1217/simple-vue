@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>简易的 Vue 响应式</title>
+    <style>
+      div {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .city-test {
+        color: red;
+        opacity: 0.7;
+      }
+    </style>
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h3>简易的 Vue 响应式</h3>
+      <p>
+        姓名：
+        <input type="text" v-model="user.name" /><br />
+        <span style="color: orange">{{user.name}}</span>
+      </p>
+      <p>
+        年龄：
+        <input type="text" v-model="user.age" /><br />
+        <span style="color: red">{{user.age}}</span>
+      </p>
+      <p>计数：<span>{{count}}</span></p>
+      <div>
+        <h5>城市：+ {{user.city}}</h5>
+        <input type="text" v-model="user.city" placeholder="填入城市信息" />
+        <p class="city-test" v-if="user.city">
+          Welcome to <span>{{user.city}}</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
